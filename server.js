@@ -51,8 +51,6 @@ app.get('/search', (req, res) => {
     res.json(results);
 });
 
-res.json(results);
-});
 
 // Starts the server
 app.listen(port, () => {
