@@ -1,0 +1,248 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghibli Glimpse</title>
+  <link rel="stylesheet" href="ghibliglimpse.css">
+</head>
+<body>
+  <!-- Header Section which contains logo, navigation links, search bar/containers, and the hamburger menu -->
+  <header>
+    <nav id="navbar">
+      <div id="logo-container">
+        <h1 id="logo">Ghibli Glimpse</h1>
+      </div>
+      <div id="search-container">
+        <input type="text" id="search-bar" placeholder="Search for a Ghibli film..." oninput="searchFilms()">
+      </div>
+      <ul id="nav-links">
+        <li><a href="#landing-page">Home</a></li>
+        <li><a href="#films-container">Films</a></li>
+        <li><a href="#about-section">About</a></li>
+      </ul>
+      <div id="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>  
+  <!-- Landing Page Section that includes a cover photo as well as a welcome title and message -->
+  <div id="landing-page">
+    <img src="edited bg.jpg" alt="Studio Ghibli Cover" id="cover-photo">
+    <div id="landing-text">
+      <h1>Welcome to Ghibli Glimpse</h1>
+      <p>Discover the magic of Studio Ghibli films</p>
+    </div>
+  </div>
+
+  <!-- Films Section that contains the overall ghibli films. This section contains the titles, release dates, descriptions, and images of the films -->
+  <main id="films-container">
+    <div class="film-card">
+      <img src="nausicaa.png" alt="Nausicaä of the Valley of the Wind">
+      <h2>Nausicaä of the Valley of the Wind</h2>
+      <p><strong>Release Date:</strong> 1984</p>
+      <p class="description">A princess fights to prevent the destruction of her world by a toxic jungle and the war between humans and nature.</p>
+    </div>
+      <!-- Film Card 2: Castle in the Sky -->
+    <div class="film-card">
+      <img src="castle in the sky.png" alt="Castle in the Sky">
+      <h2>Castle in the Sky</h2>
+      <p><strong>Release Date:</strong> 1986</p>
+      <p class="description">A young boy and girl search for a legendary floating island, but are pursued by pirates and government agents determined to capture it.</p>
+    </div>
+
+  <!-- Film Card 3: Grave of the Fireflies -->
+    <div class="film-card">
+      <img src="grave of the fireflies.png" alt="Grave of the Fireflies">
+      <h2>Grave of the Fireflies</h2>
+      <p><strong>Release Date:</strong> 1988</p>
+      <p class="description">A young boy and his little sister struggle to survive in Japan during World War II after their home is destroyed.</p>
+    </div>
+
+  <!-- Film Card 4: My Neighbor Totoro -->
+    <div class="film-card">
+      <img src="my neighbor totoro.png" alt="My Neighbor Totoro">
+      <h2>My Neighbor Totoro</h2>
+      <p><strong>Release Date:</strong> 1988</p>
+      <p class="description">A heartwarming story of two girls who move to the countryside and discover a magical creature named Totoro.</p>
+    </div>
+
+  <!-- Film Card 5: Kiki's Delivery Service -->
+    <div class="film-card">
+      <img src="kikis delivery service.png" alt="Kiki's Delivery Service">
+      <h2>Kiki's Delivery Service</h2>
+      <p><strong>Release Date:</strong> 1989</p>
+      <p class="description">A young witch named Kiki starts her own delivery service, learning about independence, responsibility, and self-discovery along the way.</p>
+    </div>
+
+  <!-- Film Card 6: Only Yesterday -->
+    <div class="film-card">
+      <img src="only yesterday.png" alt="Only Yesterday">
+      <h2>Only Yesterday</h2>
+      <p><strong>Release Date:</strong> 1991</p>
+      <p class="description">A 27-year-old woman reflects on her childhood while traveling to the countryside, leading to a journey of self-discovery.</p>
+    </div>
+
+    <!-- Film Card 7: Porco Rosso -->
+    <div class="film-card">
+      <img src="porco rosso.png" alt="Porco Rosso">
+      <h2>Porco Rosso</h2>
+      <p><strong>Release Date:</strong> 1992</p>
+      <p class="description">Set in Italy during the 1930s, the film tells the story of a former World War I pilot who becomes a bounty hunter and is cursed with the appearance of a pig.</p>
+    </div>
+
+  <!-- Film Card 8: Ocean Waves -->
+    <div class="film-card">
+      <img src="ocean waves.png" alt="Ocean Waves">
+      <h2>Ocean Waves</h2>
+      <p><strong>Release Date:</strong> 1993</p>
+      <p class="description">A high school student reflects on his past relationships with two classmates during a school trip to Hawaii.</p>
+    </div>
+
+  <!-- Film Card 9: Pom Poko -->
+    <div class="film-card">
+      <img src="pom poko.png" alt="Pom Poko">
+      <h2>Pom Poko</h2>
+      <p><strong>Release Date:</strong> 1994</p>
+      <p class="description">A group of shape-shifting raccoon dogs use their magical powers to protect their forest home from urban development.</p>
+    </div>
+
+  <!-- Film Card 10: Whisper of the Heart -->
+    <div class="film-card">
+      <img src="whisper of the heart.png" alt="Whisper of the Heart">
+      <h2>Whisper of the Heart</h2>
+      <p><strong>Release Date:</strong> 1995</p>
+      <p class="description">A young girl discovers her passion for writing and begins on a journey of self-discovery, guided by a mysterious antique cat figurine.</p>
+    </div>
+
+  <!-- Film Card 11: Princess Mononoke -->
+    <div class="film-card">
+      <img src="princess mononoke.png" alt="Princess Mononoke">
+      <h2>Princess Mononoke</h2>
+      <p><strong>Release Date:</strong> 1997</p>
+      <p class="description">A young man begins on a journey to understand and heal the conflict between humans and the spirits of the forest.</p>
+    </div>
+
+  <!-- Film Card 12: My Neighbors the Yamadas -->
+    <div class="film-card">
+      <img src="my neighbors the yamadas.png" alt="My Neighbors the Yamadas">
+      <h2>My Neighbors the Yamadas</h2>
+      <p><strong>Release Date:</strong> 1999</p>
+      <p class="description">A comedic look at the everyday lives of the Yamada family, highlighting the humor and challenges of family life.</p>
+    </div>
+
+  <!-- Film Card 13: Spirited Away -->
+    <div class="film-card">
+      <img src="spirited away.png" alt="Spirited Away">
+      <h2>Spirited Away</h2>
+      <p><strong>Release Date:</strong> 2001</p>
+      <p class="description">A young girl, Chihiro, becomes trapped in a mysterious world of spirits and gods and must find a way to save her parents.</p>
+    </div>
+
+  <!-- Film Card 14: The Cat Returns -->
+    <div class="film-card">
+      <img src="the cat returns.png" alt="The Cat Returns">
+      <h2>The Cat Returns</h2>
+      <p><strong>Release Date:</strong> 2002</p>
+      <p class="description">A young girl is whisked away to the Cat Kingdom after saving a cat from an accident, only to be pursued by feline royalty who want her to marry their prince.</p>
+    </div>
+
+  <!-- Film Card 15: Howl's Moving Castle -->
+    <div class="film-card">
+      <img src="howl's moving castle.png" alt="Howl's Moving Castle">
+      <h2>Howl's Moving Castle</h2>
+      <p><strong>Release Date:</strong> 2004</p>
+      <p class="description">A young woman is cursed by a witch and transformed into an elderly woman, seeking refuge in a magical, moving castle owned by the mysterious wizard Howl.</p>
+    </div>
+
+    <!-- Film Card 16: Tales from Earthsea -->
+    <div class="film-card">
+      <img src="tales from earthsea.png" alt="Tales from Earthsea">
+      <h2>Tales from Earthsea</h2>
+      <p><strong>Release Date:</strong> 2006</p>
+      <p class="description">A young prince embarks on a journey to uncover the truth about his cursed bloodline while trying to stop a world-ending event.</p>
+    </div>
+
+  <!-- Film Card 17: Ponyo -->
+    <div class="film-card">
+      <img src="ponyo.png" alt="Ponyo">
+      <h2>Ponyo</h2>
+      <p><strong>Release Date:</strong> 2008</p>
+      <p class="description">A young boy befriends a goldfish who turns into a girl, leading to a series of magical events that threaten to reshape the world.</p>
+    </div>
+
+  <!-- Film Card 18: The Secret World of Arrietty -->
+    <div class="film-card">
+      <img src="the secret world of arrietty.png" alt="The Secret World of Arrietty">
+      <h2>The Secret World of Arrietty</h2>
+      <p><strong>Release Date:</strong> 2010</p>
+      <p class="description">In a hidden world beneath the floorboards, tiny people known as Borrowers live secretly among humans. Arrietty befriends a boy and faces the dangers of being discovered.</p>
+    </div>
+
+    <!-- Film Card 19: From Up on Poppy Hill -->
+    <div class="film-card">
+      <img src="from up on poppy hill.png" alt="From Up on Poppy Hill">
+      <h2>From Up on Poppy Hill</h2>
+      <p><strong>Release Date:</strong> 2011</p>
+      <p class="description">A young girl and a boy try to save their school clubhouse from being demolished while uncovering the history of their parents.</p>
+    </div>
+
+  <!-- Film Card 20: The Wind Rises -->
+    <div class="film-card">
+      <img src="the wind rises.png" alt="The Wind Rises">
+      <h2>The Wind Rises</h2>
+      <p><strong>Release Date:</strong> 2013</p>
+      <p class="description">A biographical film about the life of Jiro Horikoshi, the designer of the Mitsubishi A6M Zero fighter plane used in World War II.</p>
+    </div>
+
+  <!-- Film Card 21: The Tale of the Princess Kaguya -->
+    <div class="film-card">
+      <img src="the tale of the princess kaguya.png" alt="The Tale of the Princess Kaguya">
+      <h2>The Tale of the Princess Kaguya</h2>
+      <p><strong>Release Date:</strong> 2013</p>
+      <p class="description">A bamboo cutter finds a tiny girl inside a bamboo stalk and raises her as his daughter, unaware of her divine origins.</p>
+    </div>
+
+  <!-- Film Card 22: When Marnie Was There -->
+    <div class="film-card">
+      <img src="when marnie was there.png" alt="When Marnie Was There">
+      <h2>When Marnie Was There</h2>
+      <p><strong>Release Date:</strong> 2014</p>
+      <p class="description">A lonely girl forms a bond with Marnie, a mysterious girl who may not be what she seems, in a haunting story of friendship and secrets.</p>
+    </div>
+
+  <!-- Film Card 23: Earwig and the Witch -->
+    <div class="film-card">
+      <img src="earwig and the witch.png" alt="Earwig and the Witch">
+      <h2>Earwig and the Witch</h2>
+      <p><strong>Release Date:</strong> 2020</p>
+      <p class="description">A headstrong orphan girl is adopted by a selfish witch and must use her cleverness to escape the witch's control and uncover secrets about her origins.</p>
+    </div>
+
+    <!-- Film Card 24: The Boy and the Heron -->
+    <div class="film-card">
+      <img src="the boy and the heron.png" alt="The Boy and the Heron">
+      <h2>The Boy and the Heron</h2>
+      <p><strong>Release Date:</strong> 2023</p>
+      <p class="description">A young boy begins on a surreal adventure following the death of his mother, guided by a mysterious heron that leads him through a fantastical journey filled with myth, magic, and self-discovery.</p>
+    </div>
+  </main>
+
+  <!-- About Section that contains a short description about the app -->
+  <section id="about-section">
+    <h2>About</h2>
+    <p>Wanna know more about Studio Ghibli films? Welcome to Ghibli Glimpse, your gateway to know more about the Studio Ghibli world. Explore films and immerse yourself in remarkable stories.</p>
+  </section>
+
+  <!-- Search Results that contains the search result but only appears when a user search for something -->
+  <div id="search-results"></div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Ghibli Glimpse. All rights reserved.</p>
+  </footer>
+
+  <script src="ghibliglimpsescript.js"></script>
+</body>
+</html>
