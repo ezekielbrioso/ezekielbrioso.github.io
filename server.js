@@ -4,6 +4,9 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
+app.use(express.json());
+app.use(express.static('public'));
+
 // This section contains Film data
 const films = [
     { id: 1, title: "Nausicaä of the Valley of the Wind", release_date: "1984", description: "A princess fights to prevent the destruction of her world by a toxic jungle and the war between humans and nature.", image_url:"nausicaa.png" },
@@ -47,8 +50,9 @@ app.get('/search', (req, res) => {
     console.log(`Found results: ${results.length}`);  // Shows how many results were found
     res.json(results);
 });
-  
-  
+
+res.json(results);
+});
 
 // Starts the server
 app.listen(port, () => {
